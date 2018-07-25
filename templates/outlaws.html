@@ -6,6 +6,37 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
   <style type="text/css">
 
+    #navlink-div {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 155px;
+      left: 125px;
+      line-height: 25px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 15px;
+      text-shadow: 1px 1px #ffffff;
+    }
+    #nav:hover #navlink-div {
+      opacity: 1;
+    }
+    .coollink {
+      color: #7f7f7f;
+      text-decoration: none;
+    }
+    .coollink:visited {
+       color: #7f7f7f;
+       text-decoration: none;
+    }
+    .coollink:hover {
+       color: #7f7f7f;
+       text-decoration: none;
+    }
+    .coollink:active {
+       color: #303030;
+       text-decoration: none;
+    }
     #logo {
       position: absolute;
       left: 50px;
@@ -75,10 +106,19 @@
 <body>
 
   <div id="homepage-container" class="container body-container" style="width: 1500px;">
-    <a href="/"><img id="logo" src="/static/logo.png"></a>
+    <div id="nav">
+      <a href="/"><img id="logo" src="/static/logo.png"></a>
+      <div id="navlink-div">
+        <a class="navlink coollink" href="/outlaws">The Outlaws</a><br>
+        <a class="navlink coollink" href="/hideout">The Hideout</a><br>
+        <a class="navlink coollink" href="/code">The Code</a><br>
+        <a class="navlink coollink" href="/availability">Availability</a><br>
+        <a class="navlink coollink" href="/guests">Guests</a>
+      </div>
+    </div>
 
     <div id="title-div" class="row" style="margin-top: 40px;">
-      <h1 class="title">The Outlaws</h1>
+      <h1 class="title">The Illustrious Company of the Necroninden</h1>
     </div><!-- title-div -->
 
     <div id="first-row" class="row picture-row">
@@ -87,14 +127,14 @@
         <img class="outlaw-img" src="/static/matthew.png">
         <h2 class="smallrank">Pirate King</h2>
         <p class="subtitle">Matthew</p class="subtitle">
-        <p class="subtitle">Status: Active</p>
+        <!-- <p class="subtitle">Status: Active</p> -->
         <div class="outlaw-text left-text">A whimsically optimistic swashbuckler and dancer and a devilishly handsome, incorrigible flirt.</div>
       </div>
       <div id="olivia-div" class="col-lg-4 outlaw-div right-picture">
         <img class="outlaw-img" src="/static/anita.png">
-        <h2>Rapscallion Rascal of the Roguish Order</h2>
+        <h2>Rapscallion Rascal<br>of the Roguish Order</h2>
         <p class="subtitle">Olivia</p class="subtitle">
-        <p class="subtitle">Status: Active</p>
+        <!-- <p class="subtitle">Status: Active</p> -->
         <div class="outlaw-text right-text">A tender hearted dancer with a thirst for adventure and...<br>new experiences.</div>
       </div>
       <div class="col-lg-2"></div>
@@ -106,14 +146,14 @@
         <img class="outlaw-img" src="/static/koji.png">
         <h2>Mischief Mastermind Extraordinaire</h2>
         <p class="subtitle">Koji</p>
-        <p class="subtitle">Status: Active</p>
+        <!-- <p class="subtitle">Status: Active</p> -->
         <div class="outlaw-text left-text">A kind-hearted computer master with a hilarious sense of humor who enjoys entertaining ladies...<br>lots of ladies.</div>
       </div>
       <div id="tyler-div" class="col-lg-4 outlaw-div right-picture">
         <img class="outlaw-img" src="/static/koji.png">
         <h2 class="smallrank">Shenanigangster</h2>
         <p class="subtitle">Tyler</p>
-        <p class="subtitle">Status: Active</p>
+        <!-- <p class="subtitle">Status: Active</p> -->
         <div class="outlaw-text right-text">A laid-back gamer with an insatiable fondness for raspberries and a catchphrase for every occasion.</div>
       </div>
       <div class="col-lg-2"></div>       
@@ -123,14 +163,14 @@
       <div class="col-lg-2"></div>
       <div id="angie-div" class="col-lg-4 outlaw-div left-picture">
         <img class="outlaw-img" src="/static/anita.png">
-        <h2>Skullduggery Champion of the Crossed Bones</h2>
+        <h2>Skullduggery Champion<br>of the Crossed Bones</h2>
         <p class="subtitle">Angie</p>
-        <p class="subtitle">Status: Active</p>
+        <!-- <p class="subtitle">Status: Active</p> -->
         <div class="outlaw-text left-text">A jaculiferous hesperidium with a laconic grandiloquence and intense distaste for ultracrepidarianism.</div>
       </div>
       <div id="opening-div" class="col-lg-4 outlaw-div right-picture">
         <img class="outlaw-img" src="/static/anita.png">
-        <h2 style="margin-bottom: 103px;">Open Position</h2>
+        <h2 style="margin-bottom: 73px;">Open Position</h2>
         <!-- <p class="subtitle">Status: At Large</p> -->
       </div>
       <div class="col-lg-2"></div>
