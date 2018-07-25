@@ -11,7 +11,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 100%;
+      width: 90%;
       height: auto;
       transition: .5s ease;
       backface-visibility: hidden;
@@ -25,7 +25,7 @@
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       text-shadow: 1px 1px #ffffff;
     }
     .outlaw-div:hover .outlaw-img {
@@ -34,6 +34,18 @@
     .outlaw-div:hover .outlaw-text {
       opacity: 1;
     }
+    .picture-row {
+      margin-top: 80px;
+    }
+    .title, .outlaw-div {
+      text-align: center;
+    }
+    /*.left-picture {
+      margin-left: 30px;
+    }*/
+    /*.right-picture {
+      margin-left: 30px;
+    }*/
 
   </style>
 
@@ -55,60 +67,75 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <div id="title-div" class="row" style="margin-top: 40px; margin-bottom: 40px;">
-      <h1 class="title" style="text-align: center;">The Outlaws</h1>
+    <div id="title-div" class="row" style="margin-top: 40px;">
+      <h1 class="title">The Outlaws</h1>
     </div><!-- title-div -->
 
-    <div id="first-row" class="row" style="margin-top: 60px;">
+    <div id="first-row" class="row picture-row">
       <div class="col-lg-2"></div>
-      <div id="matthew-div" class="col-lg-2 outlaw-div" style="text-align: center;">
+      <div id="matthew-div" class="col-lg-4 outlaw-div left-picture">
         <img class="outlaw-img" src="/static/matthew.png">
-        <div class="outlaw-text">A whimsically optimistic swashbuckler and dancer and a devilishly handsome, incorrigible flirt.</div>
-        <h4>Matthew, Pirate King</h4>
-        <h6>Status: Active</h6>
+        <div class="outlaw-text left-text">A whimsically optimistic swashbuckler and dancer and a devilishly handsome, incorrigible flirt.</div>
+        <h3>Matthew, Pirate King</h3>
+        <h4>Status: Active</h4>
       </div>
-      <div id="olivia-div" class="col-lg-2 outlaw-div" style="text-align: center;">
+      <div id="olivia-div" class="col-lg-4 outlaw-div right-picture">
         <img class="outlaw-img" src="/static/anita.png">
-        <div class="outlaw-text">A tender hearted dancer with a thirst for adventure and...new experiences.</div>
-        <h4>Olivia, Rapscallion Rascal of the Roguish Order</h4>
-        <h6>Status: Active</h6>
+        <div class="outlaw-text right-text">A tender hearted dancer with a thirst for adventure and...new experiences.</div>
+        <h3>Olivia, Rapscallion Rascal of the Roguish Order</h3>
+        <h4>Status: Active</h4>
       </div>
-      <div id="koji-div" class="col-lg-2 outlaw-div" style="text-align: center;">
+      <div class="col-lg-2"></div>
+    </div>
+
+    <div id="second-row" class="row picture-row">
+      <div class="col-lg-2"></div>
+      <div id="koji-div" class="col-lg-4 outlaw-div left-picture">
         <img class="outlaw-img" src="/static/koji.png">
-        <div class="outlaw-text">A kind-hearted computer master with a hilarious sense of humor who enjoys entertaining ladies... lots of ladies.</div>
-        <h4>Koji, Mischief Mastermind Extraordinaire</h4>
-        <h6>Status: Active</h6>
+        <div class="outlaw-text left-text">A kind-hearted computer master with a hilarious sense of humor who enjoys entertaining ladies... lots of ladies.</div>
+        <h3>Koji, Mischief Mastermind Extraordinaire</h3>
+        <h4>Status: Active</h4>
       </div>
-      <div id="tyler-div" class="col-lg-2 outlaw-div" style="text-align: center;">
+      <div id="tyler-div" class="col-lg-4 outlaw-div right-picture">
         <img class="outlaw-img" src="/static/koji.png">
-        <div class="outlaw-text">A laid-back gamer with an insatiable fondness for raspberries and a catchphrase for every occasion.</div>
-        <h4>Tyler, Shenanigangster</h4>
-        <h6>Status: Active</h6>
+        <div class="outlaw-text right-text">A laid-back gamer with an insatiable fondness for raspberries and a catchphrase for every occasion.</div>
+        <h3>Tyler, Shenanigangster</h3>
+        <h4>Status: Active</h4>
       </div>
       <div class="col-lg-2"></div>       
     </div>
 
-    <div id="second-row" class="row" style="margin-top: 40px; margin-bottom: 40px;">
-      <div class="col-lg-3"></div>
-      <div id="angie-div" class="col-lg-2 outlaw-div" style="text-align: center;">
+    <div id="third-row" class="row picture-row">
+      <div class="col-lg-2"></div>
+      <div id="angie-div" class="col-lg-4 outlaw-div left-picture">
         <img class="outlaw-img" src="/static/anita.png">
-        <div class="outlaw-text">A jaculiferous hesperidium with a laconic grandiloquence and intense distaste for ultracrepidarianism.</div>
-        <h4>Angie, Skullduggery Champion of the Crossed Bones</h4>
-        <h6>Status: Active</h6>
+        <div class="outlaw-text left-text">A jaculiferous hesperidium with a laconic grandiloquence and intense distaste for ultracrepidarianism.</div>
+        <h3>Angie, Skullduggery Champion of the Crossed Bones</h3>
+        <h4>Status: Active</h4>
       </div>
-      <div id="jared-div" class="col-lg-2 outlaw-div" style="text-align: center;">
+      <div id="opening-div" class="col-lg-4 outlaw-div right-picture">
+        <img class="outlaw-img" src="/static/anita.png">
+        <h3>Open Position</h3>
+        <!-- <h4>Status: At Large</h4> -->
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+
+    <div id="fourth-row" class="row picture-row">
+      <div class="col-lg-2"></div>
+      <div id="jared-div" class="col-lg-4 outlaw-div left-picture">
         <img class="outlaw-img" src="/static/jared.png">
-        <div class="outlaw-text">A dangerous combination of a wealth of dubiously useful knowledge and legally ambiguous interests.</div>
-        <h4>Jared, Chaosmonger</h4>
-        <h6>Status: Transferred</h6>
+        <div class="outlaw-text left-text">A dangerous combination of a wealth of dubiously useful knowledge and legally ambiguous interests.</div>
+        <h3>Jared, Chaosmonger</h3>
+        <h4>Status: Transferred</h4>
       </div>
-      <div id="anita-div" class="col-lg-2 outlaw-div" style="text-align: center;">
+      <div id="anita-div" class="col-lg-4 outlaw-div right-picture">
         <img class="outlaw-img" src="/static/anita.png">
-        <div class="outlaw-text">Class, style, taste. A writer whose insight into the soul finds inspiration from the seductive influences of alcohol, cigarette smoke, and the human condition.</div>
-        <h4>Anita, Saboteur Specialist</h4>
-        <h6>Status: At Large</h6>
+        <div class="outlaw-text right-text">Class, style, taste. A writer whose insight into the soul finds inspiration from the seductive influences of alcohol, cigarette smoke, and the human condition.</div>
+        <h3>Anita, Saboteur Specialist</h3>
+        <h4>Status: At Large</h4>
       </div>
-      <div class="col-lg-3"></div>       
+      <div class="col-lg-2"></div>
     </div>
   </div><!-- homepage-container -->
 

@@ -1,1 +1,1 @@
-web: python server.py
+web: nohup python server.py > server.log &
