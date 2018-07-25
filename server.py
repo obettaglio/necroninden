@@ -54,8 +54,11 @@ def displayAvailability():
 
 
 if __name__ == '__main__':
-    app.debug = True
-    app.jinja_env.auto_reload = app.debug
+    # app.debug = True
+    # app.jinja_env.auto_reload = app.debug
+    # app.run(host='127.0.0.1', port=8090)
 
+    DEBUG = "NO_DEBUG" not in os.environ
     PORT = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=PORT)
+
+    app.run(host='0.0.0.0', port=PORT, debug=DEBUG)
