@@ -1,50 +1,9 @@
-<!doctype html>
-<html>
-<head>
+{% extends 'base.html' %}
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-  <style type="text/css">
-
-    #navlink-div {
-      transition: .5s ease;
-      opacity: 0;
-      position: absolute;
-      top: 155px;
-      left: 125px;
-      line-height: 25px;
-      margin-bottom: 20px;
-      text-align: center;
-      font-size: 15px;
-      text-shadow: 1px 1px #ffffff;
-    }
-    #nav:hover #navlink-div {
-      opacity: 1;
-    }
-    .coollink {
-      color: #7f7f7f;
-      text-decoration: none;
-    }
-    .coollink:visited {
-       color: #7f7f7f;
-       text-decoration: none;
-    }
-    .coollink:hover {
-       color: #7f7f7f;
-       text-decoration: none;
-    }
-    .coollink:active {
-       color: #303030;
-       text-decoration: none;
-    }
+{% block style %}
+    
     .title {
       text-align: center;
-    }
-    #logo {
-      position: absolute;
-      left: 50px;
-      top: 20px;
-      width: 15%;
     }
     .listitems {
       font-size: 24px;
@@ -53,54 +12,32 @@
     .listitems li {
       margin-top: 15px;
     }
-    
-  </style>
 
-  <title>Code | The Necroninden</title>
+{% endblock %}
 
-</head>
-<body>
+{% block head %}The Code | The Necroninden{% endblock %}
 
-  <div id="homepage-container" class="container body-container" style="width: 1500px;">
-    <div id="nav">
-      <a href="/"><img id="logo" src="/static/logo.png"></a>
-      <div id="navlink-div">
-        <a class="navlink coollink" href="/outlaws">The Outlaws</a><br>
-        <a class="navlink coollink" href="/hideout">The Hideout</a><br>
-        <a class="navlink coollink" href="/code">The Code</a><br>
-        <a class="navlink coollink" href="/availability">Availability</a><br>
-        <a class="navlink coollink" href="/guests">Guests</a>
-      </div>
-    </div>
+{% block content %}
 
-    <div id="title-div" class="row" style="margin-top: 40px; margin-bottom: 40px;">
-      <h1 class="title">Articles of Agreement</h1>
-      <h3 class="title">made among</h3>
-      <h2 class="title">the Company of the Necroninden</h2>
-    </div><!-- title-div -->
+<div id="title-div" class="row" style="margin-top: 40px; margin-bottom: 40px;">
+  <h1 class="title">Articles of Agreement</h1>
+  <h3 class="title">made among</h3>
+  <h2 class="title">the Company of the Necroninden</h2>
+</div><!-- title-div -->
 
-    <div id="main-div" class="row" style="margin-bottom: 80px;">
-      <div class="col-lg-3"></div>
-      <div class="col-lg-6 listitems">
-        <ol type="I">
-          <li>Members of the Company shall endeavor to treat each other, the property thereof, and the Necroninden according to the utmost excellence of their characters.</li>
-          <li>Every person has a vote in the affairs of the moment and has equal title to the food and drink of the house.</li>
-          <li>Every person shall endeavor to keep the house reasonably clean and organized.</li>
-          <li>Every person’s privacy shall be respected. Opinions or behaviors expressed in and around the Necroninden or in the Company if not near the premises of the Necroninden shall be kept reasonably private.</li>
-          <li>Pranks and other such acts shall be reversible and those persons involved in the execution of said acts shall restore the involved property to its original condition within 24 hours.</li>
-          <li>Violation of these articles shall result in response according to the discretion of the rest of the members of the company, up to and including exile.</li>
-        </ol>
-      </div>
-      <div class="col-lg-3"></div>
-    </div><!-- main-div -->
-  </div><!-- homepage-container -->
+<div id="main-div" class="row" style="margin-bottom: 80px;">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6 listitems">
+    <ol type="I">
+      <li>Members of the Company shall endeavor to treat each other, the property thereof, and the Necroninden according to the utmost excellence of their characters.</li>
+      <li>Every person has a vote in the affairs of the moment and has equal title to the food and drink of the house.</li>
+      <li>Every person shall endeavor to keep the house reasonably clean and organized.</li>
+      <li>Every person’s privacy shall be respected. Opinions or behaviors expressed in and around the Necroninden or in the Company if not near the premises of the Necroninden shall be kept reasonably private.</li>
+      <li>Pranks and other such acts shall be reversible and those persons involved in the execution of said acts shall restore the involved property to its original condition within 24 hours.</li>
+      <li>Violation of these articles shall result in response according to the discretion of the rest of the members of the company, up to and including exile.</li>
+    </ol>
+  </div>
+  <div class="col-lg-3"></div>
+</div><!-- main-div -->
 
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-
-  </script>
-
-</body>
-</html>
+{% endblock %}
