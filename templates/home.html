@@ -4,6 +4,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <link rel="icon" type="image/png" href="/static/favicon-32x32.png" sizes="32x32" />
   <style type="text/css">
 
   .title {
@@ -16,6 +17,12 @@
   }
   .navlink {
     font-size: 200%;
+  }
+  .left-link {
+    padding-left: 150px;
+  }
+  .right-link {
+    padding-right: 150px;
   }
 
   </style>
@@ -33,17 +40,29 @@
       <h1 class="title" style="font-size: 400%;">Necroninden</h1>
     </div><!-- title-div -->
 
-    <div id="main-div" class="row">
+    <div class="row">
       <div class="col-lg-2"></div>
-      <div id="navlinks-div" class="col-lg-8" style="text-align: center;">
-        <a class="navlink" href="/outlaws">The Outlaws</a><br/>
-        <a class="navlink" href="/hideout">The Hideout</a><br/>
-        <a class="navlink" href="/code">The Code</a><br/>
-        <a class="navlink" href="/guests">Guests</a><br/>
-        <a class="navlink" href="/availability">Availability</a>
+      <div class="col-lg-3 title">
+        <a class="navlink left-link" href="/outlaws">The Outlaws</a>
+      </div>
+      <div class="col-lg-2 title">
+        <a class="navlink" href="/hideout">The Hideout</a>
+      </div>
+      <div class="col-lg-3 title">
+        <a class="navlink right-link" href="/code">The Code</a>
       </div>
       <div class="col-lg-2"></div>
-    </div><!-- main-div -->
+    </div>
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-3 title">
+        <a class="navlink left-link" href="/availability">Availability</a>
+      </div>
+      <div class="col-lg-3 title">
+        <a class="navlink right-link" href="/guests">Guests</a>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
   </div><!-- homepage-container -->
 
   <script src="https://code.jquery.com/jquery.js"></script>
